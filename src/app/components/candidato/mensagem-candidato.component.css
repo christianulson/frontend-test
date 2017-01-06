@@ -1,0 +1,15 @@
+     .wrapper { margin-right: 110px; }
+     .mensagens { float: left; }
+     .foto { float: right; margin-right: -110px; }
+
+     .mensagem { text-align: left; max-width: 270px; }
+     .icone { position: absolute; bottom: 3px; left: 3px; }
+     .seta { right: -4px; }
+
+     .nome,
+     .hora { text-align: right; }
+    
+    @media screen and (max-width: 320px) {
+    .caixa-canditato .wrapper { margin-right: 80px; }
+    .caixa-canditato .foto { margin-right: -70px; }
+}

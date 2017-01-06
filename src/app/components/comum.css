@@ -1,0 +1,15 @@
+span { display: block; }
+
+.seta { z-index: 1; top: 7px; width: 16px; height: 16px; background-color: #dddddd; position: absolute; transform: rotate(45deg); }
+
+.usuario { z-index: 10; padding: 5px; }
+.mensagens { width: 100%; min-height: 75px; overflow: visible; }
+.item { position: relative; margin-bottom: 5px; background-color: #dddddd; }
+.mensagem { clear: both; padding: 8px; padding-bottom: 0; font-size: 16px; line-height: 1; }
+.nome { clear: both; font-size: 14px; line-height: 0.857; }
+.empresa { clear: both; font-size: 14px; line-height: 0.857; font-weight: bold; }
+.hora { clear: both; font-size: 11px; margin-top: 3px; }
+
+@media screen and (max-width: 320px) {
+    .foto {width: 60px;height:60px }
+}

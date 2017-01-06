@@ -1,0 +1,17 @@
+ .wrapper { margin-left: 110px; }
+     .foto { float: left; margin-left: -110px; }
+    .mensagens { float: right; }
+
+     .seta { left: -4px; }
+     .wraper2 {position:relative; overflow: hidden;z-index: 10; }
+     .usuario { float: left; position: absolute; bottom: 0; }
+     .nome,
+     .empresa,
+     .hora { text-align: left; }
+     .mensagem { float: right; text-align: left; max-width: 270px; margin-bottom: 30px; }
+
+@media screen and (max-width: 320px) {
+     .wrapper { margin-left: 80px; }
+     .foto { margin-left: -70px; }
+     .mensagem { max-width: 100%; margin-bottom: 55px; }
+}

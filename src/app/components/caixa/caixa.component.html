@@ -1,0 +1,25 @@
+<div #caixa class="caixa">
+    <div class="caixa-titulo">
+        <span>Vaga: Desenvolvedor Front-end</span>
+        <span class="botoes">
+            <a href="javascript:void(0);" class="icon restaurar"  (click)="onRestaurar($event)"></a>
+            <a href="javascript:void(0);" class="icon minimizar" (click)="onMinimizar($event)"></a>
+            <a href="javascript:void(0);" class="icon fechar" (click)="onFechar($event)"></a>
+        </span>
+    </div>
+    <div #caixacorpo class="caixa-corpo">
+        <!--<div mensagem *ngFor="let talk of talks" [model]="talk"></div>-->
+        <div *ngFor="let talk of talks">
+            <candidato *ngIf="talk.type=='candidato'" [model]="talk.talkMessages"></candidato>
+            <recrutador *ngIf="talk.type=='recrutador'" [model]="talk.talkMessages"></recrutador>
+        </div>
+        <span *ngIf="!talks || talks.length == 0" class="load"><img src="/assets/images/carregando.gif" width="18px;"/> carregando...</span> 
+    </div>
+    <div class="caixa-rodape">
+        <textarea #textarea placeholder="Digite aqui sua mensagem..."></textarea>
+        <div>
+            <a href="javascript:void(0);" class="enviar" (click)="onEnviar(textarea)"></a>
+            <a href="javascript:void(0);" class="limpar" (click)="onLimpar(textarea)"></a>
+        </div>
+    </div>
+</div>

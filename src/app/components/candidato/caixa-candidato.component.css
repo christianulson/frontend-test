@@ -1,0 +1,6 @@
+span { display: block; }
+.caixa-canditato { padding: 5px 15px 5px 50px; margin: 5px 0px; overflow: hidden; }
+
+@media screen and (max-width: 320px) {
+    .caixa-canditato { padding: 5px 5px 5px 15px;}
+}
